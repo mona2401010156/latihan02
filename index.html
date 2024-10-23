@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <link href='/style.css' rel='stylesheet'>
+  <style> 
+    label {font-size: 14px; font-weight: bold;}
+    input[type=text],input[type=number],input[type=date],input[type=time],input[type=password]{
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 5px;
+      margin: 8px 0;
+      color: grey;
+      background-color: midnightblue;
+      font-size: 16px;
+    }
+    select{
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 5px;
+      margin: 8px 0;
+      color: grey;
+      background-color: midnightblue;
+      font-size: 16px;
+    }
+    input [type=checkbox],input[type=radio]{
+      outline: 1px solid #c0c0c0 ;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label>Form Teks</label>
+      <input type="text" name="txalamat" value="isikan alamat" id="txalamat" class="txalamat">
+    <br>
+      <label>Form Number</label>
+      <input type="number">
+      <br>
+    <label> Form TGL </label>
+      <input type="date">
+      <br>
+    <label> Form waktu </label>
+      <input type="time">
+      <br>
+    <label> Form Pilihan</label>
+      <input type="radio" name="jnsk"> Laki-laki
+      <input type="radio" name="jnsk"> Perempuan
+      <br>
+      <input type="checkbox"> Sepak bola
+      <input type="checkbox"> Silat
+      <input type="checkbox"> Tinju
+      <input type="checkbox"> Drama
+      <input type="checkbox"> Acting
+      <br>
+    <label> Form Pilihan Lain</label>
+      <select>
+        <option disabled selected> silahkan pilih warna </option>
+        <option> merah </option>
+        <option> putih </option>
+        <option> biru </option> 
+      </select>
+      <br>
+      <label> Form Password</label>
+        <input type="password" name="txPASS">
+      <input type="submit" value="Tombol">
+  </form>
+</body>
+</html>
